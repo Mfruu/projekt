@@ -4,8 +4,8 @@ W tym dokumencie pokażę schematy zadań maturalnych oraz proste sposoby ich ro
 
 # SPIS TREŚCI:
 * [Polecenie](#polecenie)
-* [Rozwiązanie](#rozwiązanie)
-* [More detailed information about modules](#more-detailed-information-about-modules)
+* [Rozwiązywanie](#rozwiązywanie)
+* [General info](#general-info)
 * [Application view](#application-view)
 
 ## Polecenie
@@ -37,25 +37,41 @@ Dla ułatwienia sprawdzania poprawności działania kodu, zdającym dany jest r�
 <br></br>
 </details>
 
-```python
-class ReportGenerator:
-    def generate(self, data):
-        return f"Report: {data}"
+## Rozwiązywanie
+<details>
+<summary>Dowiedz się więcej o ROZWIĄZYWANIU zadania maturalnego!</summary>
+<br></br>
+By nauczyć się samemu pisać kody, niezleżnie od języka programowania, warto inspirować się pracą innych by "złapać" schemat jakim pisane są programy na maturze. Zatem dla polecenia:
+<br></br>
+  
+- Zadanie 2.1.
+> Podaj wszystkie takie napisy z pliku symbole.txt, które są palindromami (czytane od przodu i od tyłu są takie same). Wypisz je po jednym w wierszu, w kolejności takiej jak w pliku symbole.txt. <br></br> Odpowiedź dla pliku symbole_przyklad.txt to <br></br> oooo+**+oooo <br></br> (w tym pliku jest jeden palindrom)
 
-class ReportPrinter:
-    def print(self, report):
-        print(report)
-```
+Tworzymy następujący kod:
 ```python
-class ReportGenerator:
-    def generate(self, data):
-        return f"Report: {data}"
+def is_palindrome(file, line):
+    with open(file, 'r') as file:
+        start = 0
+        end = len(line)-2
+        while start < end:
+            if line[start] != line[end]:
+                return False
+            else:
+                start += 1
+                end -= 1
+        return True
 
-class ReportPrinter:
-    def print(self, report):
-        print(report)
+
+file = 'symbole.txt'
+
+for line in open(file):
+    if is_palindrome(file, line) == True:
+        print(line)
 ```
-## Rozwiązanie 
+</details>
+
+## Komendy
+Do rozwiązania zadań maturalnych potrzebna jest znajomość wielu komend, a 
 
 
 
