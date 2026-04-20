@@ -5,8 +5,8 @@ W tym dokumencie pokażę schematy zadań maturalnych oraz proste sposoby ich ro
 # SPIS TREŚCI:
 * [Polecenie](#polecenie)
 * [Rozwiązywanie](#rozwiązywanie)
-* [General info](#general-info)
-* [Application view](#application-view)
+* [Podsumowanie](#podsumowanie)
+* [Źródła](#źródła)
 
 ## Polecenie
 
@@ -247,12 +247,7 @@ Dodatkowo w różnych poleceniach możemy spotkać znaki takie jak:
   
 </details>
 
-## Komendy
-Do rozwiązania zadań maturalnych potrzebna jest znajomość wielu komend, a 
-
-
-
-6. Podsumowanie 
+6. Podsumowanie
 
 ## Źródła
 [Spis treści - markdown](https://www.devs-mentoring.pl/tworzenie-profesjonalnego-readme/)
