@@ -48,7 +48,8 @@ Dla ułatwienia sprawdzania poprawności działania kodu, zdającym dany jest r�
 By nauczyć się samemu pisać kody, niezleżnie od języka programowania, warto inspirować się pracą innych by "złapać" schemat jakim pisane są programy na maturze. Polecenie:
 <br></br>
   
-- Zadanie 2.1.
+### - 2.1
+
 > Podaj wszystkie takie napisy z pliku symbole.txt, które są palindromami (czytane od przodu i od tyłu są takie same). Wypisz je po jednym w wierszu, w kolejności takiej jak w pliku symbole.txt. <br></br> Odpowiedź dla pliku symbole_przyklad.txt to <br></br> oooo+**+oooo <br></br> (w tym pliku jest jeden palindrom)
 ---
 Po kolei omówię linijki kodu potrzebnego do realizacji tego zadania:
@@ -84,8 +85,6 @@ Funkcja „print” wyświetla (drukuje) wskazane dane na konsoli.
 while start < end:
 ```
 Pętla „while” polega na wykonywaniu wyznaczonej komendy do czasu spełnienia warunku.
-
-### - 2.1
 
 ```python
 def is_palindrome(file, line):
@@ -127,6 +126,9 @@ Funkcja „strip()” pozwala na wyczyszczenie pliku ze znaków białych.
 ### Po poznaniu wszystkich tych funkcji jesteśmy w stanie już dalej samodzielnie robić zadania:
 ### - 2.2
 
+> Zadanie 2.2. (0–4) <br></br>W pliku symbole.txt szukamy „kwadratów” złożonych z dziewięciu sąsiadujących identycznych symboli: <br></br> + + + o o o * * * <br></br> + + + o o o * * * <br></br> + + + o o o * * * <br></br> Podaj, ile takich kwadratów występuje w pliku symbole.txt. Jeżeli w pliku występuje jeden taki kwadrat, podaj numer wiersza i numer pozycji w wierszu (licząc od 1) jego środkowego pola. Jeżeli jest więcej takich kwadratów, podaj numer wiersza i numer pozycji w wierszu dla środkowego pola każdego z nich. <br></br> Przykład: <br></br> Poniżej podano 6 wierszy przykładowych danych (po 12 znaków w każdym wierszu): <br></br> 1. + * * + o * o + + * o + <br></br> 2. + + + o o o o * o * * * <br></br> 3. + o * o o o o * * + + + <br></br> 4.* + * o o o o o o + + + <br></br> 5. o * * o + + + o + + + + <br></br> 6. o o o o + + * * + * + o <br></br>
+Mamy tutaj trzy kwadraty złożone z 9 identycznych symboli: pierwszy ma środek w wierszu <br></br> 3 na pozycji 5, drugi – w wierszu 3 na pozycji 6, a trzeci – w wierszu 4 na pozycji 11. <br></br> Odpowiedź dla pliku symbole_przyklad.txt to <br></br> 1 6 3 <br></br> (jeden kwadrat, który ma środkowe pole w wierszu 6, na pozycji 3).
+<br></br>
 ```python
 def is_square(matrix, row, column):
     center = matrix[row][column]
